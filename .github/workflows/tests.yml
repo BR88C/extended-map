@@ -1,13 +1,13 @@
 name: Tests
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - 'main'
   pull_request:
   schedule:
     - cron: '0 0 * * *'
-  workflow_dispatch
 
 jobs:
   codeql-analysis:
